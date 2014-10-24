@@ -1,8 +1,6 @@
-var scr = document.getElementById('feedback_script');
-
 var scripts = document.getElementsByTagName("script");
 var script = scripts[scripts.length - 1];
-scr = script;
+var scr = script;
 
 var emailAddress = scr.getAttribute("data-email");
 var includeRating = !scr.getAttribute("data-hide-rating");
