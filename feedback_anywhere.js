@@ -2,7 +2,7 @@ var scr = document.getElementById('feedback_script');
 var emailAddress = scr.getAttribute("data-email");
 var currentRating = 0;
 function sendFeedback() {
-  var mailto = "mailto: " + email;
+  var mailto = "mailto: " + emailAddress;
   mailto += '?subject=Blog post feedback for "' + document.title + '"';
   mailto += "&body=Rating: "
   mailto += (new Array(currentRating+1).join("\u2605"));
